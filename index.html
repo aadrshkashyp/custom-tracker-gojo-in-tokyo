@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom Tracker</title>
+  </head>
+  <body>
+    <div class="tracker">
+      <img src="gojo.png" alt="" srcset="" />
+    </div>
+
+    <script>
+      const tracker = document.querySelector(".tracker");
+      document.body.addEventListener("mousemove", (e) => {
+        tracker.style.left = `${e.clientX}px`;
+        tracker.style.top = `${e.clientY}px`;
+      });
+    </script>
+  </body>
+</html>
